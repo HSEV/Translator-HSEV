@@ -10,18 +10,18 @@
   "action": {
     "default_popup": "index.html",
     "default_icon": {
-      "16": "images/ico16x16.png",
-      "32": "images/ico32x32.png"
+      "16": "images/logo HSEV.jpeg",
+      "32": "images/logo HSEV.jpeg"
     }
   },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self';"
   },
   "icons": {
-    "16": "images/ico16x16.png",
-    "32": "images/ico32x32.png",
-    "192": "images/ico192x192.png",
-    "512": "images/ico512x512.png"
+    "16": "images/logo HSEV.jpeg",
+    "32": "images/logo HSEV.jpeg",
+    "192": "images/logo HSEV.jpeg",
+    "512": "images/logo HSEV.jpeg"
   },
   "host_permissions": [
     "https://655.mtis.workers.dev/*"
