@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Online Translation Tool",
+  "name": "Translator HSEV",
   "short_name": "Translation Tool",
   "description": "Translate text online between different languages.",
   "version": "1.0",
@@ -13,6 +13,9 @@
       "16": "images/ico16x16.png",
       "32": "images/ico32x32.png"
     }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
   },
   "icons": {
     "16": "images/ico16x16.png",

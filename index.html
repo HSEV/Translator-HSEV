@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Translation</title>
+    <title>Translator HSEV</title>
     
     <!-- Apple touch icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -15,6 +15,7 @@
     <!-- Web manifest -->
     <link rel="manifest" href="/manifest.json">
     
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,19 +28,19 @@
             </select>
         </div>
         <div>
-            <label for="target_lang"> Target Language</label>
-
+            <label for="target_lang">Target Language</label>
             <select id="target_lang">
-                <option value="" disabled selected>Select your language</option> <!-- Option par défaut -->
-                
+                <option value="" disabled selected>Select your language</option>
             </select>
         </div>
-        <button onclick="translateText()">Translate</button>
+        <button id="translateBtn">Translate</button>
     </div>
+    
     <div id="result-container" class="result-container">
         <div id="result" class="result"></div>
-        <button id="copy-btn" class="copy-btn" onclick="copyText()">Copy</button>
+        <button id="copy-btn" class="copy-btn">Copy</button>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
