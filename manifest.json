@@ -10,14 +10,18 @@
   "action": {
     "default_popup": "index.html",
     "default_icon": {
-      "32": "images/logo HSEV.jpeg"
+      "16": "images/logo HSEV 16x16.jpeg",
+      "32": "images/logo HSEV 32x32.jpeg"
     }
   },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self';"
   },
   "icons": {
-    "32": "images/logo HSEV.jpeg"
+    "16": "images/logo HSEV 16x16.jpeg",
+    "32": "images/logo HSEV 32x32.jpeg",
+    "192": "images/logo HSEV 192x192.jpeg",
+    "512": "images/logo HSEV 512x512.jpeg"
   },
   "host_permissions": [
     "https://655.mtis.workers.dev/*"
