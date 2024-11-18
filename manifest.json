@@ -3,7 +3,7 @@
   "name": "Translator HSEV",
   "short_name": "Translation Tool",
   "description": "Translate text online between different languages.",
-  "version": "1.0",
+  "version": "1.2",
   "permissions": [
     "storage"
   ],
