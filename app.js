@@ -143,15 +143,12 @@ function translateText() {
 
     // URL de l'API de traduction
     const apiUrl = `https://655.mtis.workers.dev/translate?text=${text}&source_lang=${sourceLang}&target_lang=${targetLang}`;
-    
-    // Utilisation de AllOrigins pour contourner CORS
     const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(apiUrl)}`;
 
     fetch(proxyUrl)
         .then(response => response.json())
         .then(data => {
-            const translationData = JSON.parse(data.contents);
-            const translatedText = translationData.response.translated_text;
+            const translatedText = data.response.translated_text;
 
             // Afficher le texte traduit dans le conteneur de résultats
             const resultContainer = document.getElementById('result');
@@ -160,7 +157,6 @@ function translateText() {
             // Augmenter la hauteur du body et html de 150px
             document.documentElement.style.height = `calc(100% + 150px)`; // Modifie la hauteur de l'élément HTML
             document.body.style.height = `calc(100% + 150px)`; // Modifie la hauteur du body
-
         })
         .catch(error => {
             console.error('Error during translation:', error);
